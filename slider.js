@@ -9,7 +9,7 @@ $(() => {
             height: "60vh",
             margin: "10vh auto",
             boxShadow: "0 0 10px #000",
-            background: `url('../../img/${arr[src]}') center/cover`,
+            background: `url('img/${arr[src]}') center/cover`,
             overflow: "hidden"
         })
         .append('<div id="slide"></div>')
@@ -39,13 +39,13 @@ $(() => {
         $('#slide')
             .css({
                 left: direction * $("#slider").width(),
-                background: `url('../../img/${arr[src]}') center/cover`
+                background: `url('img/${arr[src]}') center/cover`
             })
             .animate({
                 left: 0
             }, 1000, function() {
                 $('#slider').css({
-                    background: `url('../../img/${arr[src]}') center/cover`
+                    background: `url('img/${arr[src]}') center/cover`
                 })
             })
         timer = setTimeout(change, 3000)
