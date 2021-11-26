@@ -16,12 +16,8 @@ $(() => {
         .click(function(e) {
             change( (e.pageX > $(window).width() / 2) ? 1 : -1 )
         })
-        .mouseenter(function() {
-            clearTimeout(timer)
-        })
-        .mouseleave(function() {
-            timer = setTimeout(change, 3000)
-        })
+        //.mouseenter(function() { clearTimeout(timer) })
+        //.mouseleave(function() { timer = setTimeout(change, 3000) })
 
     $('#slide').css({
         position: "absolute",
